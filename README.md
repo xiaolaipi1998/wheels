@@ -1,7 +1,7 @@
 # wheels
 
 #### 项目介绍
-VUE UI
+VUE UI-demo
 
 #### 软件架构
 软件架构说明
