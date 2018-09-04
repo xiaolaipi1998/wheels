@@ -15,7 +15,8 @@ VUE UI-demo
 
 #### 使用说明
 
-1. xxxx
+1. 使用本框架前，请在CSS中开启border-box
+    *{box-sizing: border-box;}
 2. xxxx
 3. xxxx
 
