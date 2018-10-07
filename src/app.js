@@ -15,7 +15,13 @@ new Vue({
         loading1: false,
         loading2: true,
         loading3: true
+    },
+    methods: {
+        inputChange(e,y){
+            console.log(e.target.value);
+        }
     }
+
 })
 
 // //单元测试pwd

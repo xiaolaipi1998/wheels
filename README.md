@@ -1,6 +1,5 @@
 # wheels
-[![Build Status](https://travis-ci.org/
-xiaolaipi1998/wheels.svg?branch=master)](https://travis-ci.org/xiaolaipi1998/wheels)
+[![Build Status](https://travis-ci.org/xiaolaipi1998/wheels.svg?branch=master)](https://travis-ci.org/xiaolaipi1998/wheels)
 #### 项目介绍
 在学习过程中做的一个UI，
 
