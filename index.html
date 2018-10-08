@@ -40,16 +40,20 @@
 </head>
 <body>
 <div id="app">
+    <!--<div class="box">-->
+        <!--<g-input value="张三"></g-input>-->
+        <!--<g-input value="张三" disabled></g-input>-->
+        <!--<g-input value="张三" :readonly=true></g-input>-->
+    <!--</div>-->
+    <!--<div class="box">-->
+        <!--<g-input value="王" @ichange="inputChange"></g-input>-->
+    <!--</div>-->
     <div class="box">
-        <g-input value1="张三"></g-input>
-        <g-input value1="张三" disabled></g-input>
-        <g-input value1="张三" :readonly=true></g-input>
+        <g-input value="王" error="不能少于两个字"></g-input>
     </div>
     <div class="box">
-        <g-input value1="王" @ichange="inputChange"></g-input>
-    </div>
-    <div class="box">
-        <g-input value1="王" error="不能少于两个字"></g-input>
+        <g-input v-model="message"></g-input>
+        <p>{{message}}</p>
     </div>
     <!--<g-button icon="settings" :loading="loading1" icon-position="right" @click="loading1 = !loading1">-->
     <!--按钮-->

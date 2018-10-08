@@ -1,13 +1,13 @@
 <template>
     <div class="wrapper" :class="{error}">
-        <input :value="value1"
+        <input :value="value"
                type="text"
                :disabled="disabled"
                :readonly="readonly"
-               @change="$emit('ichange',$event)"
-               @input="$emit('ichange',$event)"
-               @focus="$emit('ichange',$event)"
-               @blur="$emit('ichange',$event)"
+               @change="$emit('change',$event.target.value)"
+               @input="$emit('input',$event.target.value)"
+               @focus="$emit('focus',$event.target.value)"
+               @blur="$emit('blur',$event.target.value)"
 
             />
         <template v-if="error">
@@ -20,12 +20,12 @@
 
 <script>
     import GIcon from './Icon'
-
+    // v-model就是  :value="message" @input=$emit('input', $event.target.value) 两个方法组合在一起的语法糖
     export default {
         name: "ginput",
         components: {GIcon},
         props: {
-            value1: {
+            value: {
                 type: String
             },
             disabled: {
