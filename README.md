@@ -1,38 +1,42 @@
 # wheels
-
+[![Build Status](https://travis-ci.org/xiaolaipi1998/wheels.svg?branch=master)](https://travis-ci.org/xiaolaipi1998/wheels)
 #### 项目介绍
-VUE UI-demo
-
-#### 软件架构
-软件架构说明
+在学习过程中做的一个UI，
 
 
-#### 安装教程
+#### 开始使用
+1、安装
+使用本架构前，请在css中开启border-box
+*{box-sizing: border-box;}
+IE8以上浏览器都支持此样式
+需要用户自行设置css
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+        IE15以上支持此样式
+2、安装 wheels
+npm i gavin-test-1
+3、引入 wheels
+  import {Button, ButtonGroup, Icon} from 'gavin-test-1'
+  import 'gavin-test-1/dist/index.css'
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. 使用本框架前，请在CSS中开启border-box
-    *{box-sizing: border-box;}
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+4、引入svg symbol
 
 
-#### 码云特技
+#### 文档
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 提问
+
+#### 变更记录
+
+#### 联系方式
+
+#### 共享代码
+
