@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="”X-UA-Compatible”" content="”IE=edge,chrome=1″/">
+    <title>轮子</title>
+    <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+
+        #app {
+            margin: 20px;
+        }
+
+        body {
+            font-size: var(--font-size);
+        }</style>
+    <style>.box{
+            margin: 20px;
+        }</style>
+<link rel="stylesheet" href="/app.a6a4d504.css"></head>
+<body>
+<div id="app">
+    <!--<div class="box">-->
+        <!--<g-input value="张三"></g-input>-->
+        <!--<g-input value="张三" disabled></g-input>-->
+        <!--<g-input value="张三" :readonly=true></g-input>-->
+    <!--</div>-->
+    <!--<div class="box">-->
+        <!--<g-input value="王" @ichange="inputChange"></g-input>-->
+    <!--</div>-->
+    <div class="box">
+        <g-input value="王" error="不能少于两个字"></g-input>
+    </div>
+    <div class="box">
+        <g-input v-model="message"></g-input>
+        <p>{{message}}</p>
+    </div>
+    <!--<g-button icon="settings" :loading="loading1" icon-position="right" @click="loading1 = !loading1">-->
+    <!--按钮-->
+    <!--</g-button>-->
+    <!--<g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">-->
+    <!--按钮-->
+    <!--</g-button>-->
+    <!--<g-button icon="settings" :loading="loading3" icon-position="left" @click="loading3 = !loading3">-->
+    <!--按钮-->
+    <!--</g-button>-->
+    <!--<g-icon icon="download"></g-icon>-->
+    <!--<g-button-group>-->
+    <!--<g-button icon="left">上一页</g-button>-->
+    <!--<g-button >更多</g-button>-->
+    <!--<g-button icon="right" icon-position="right">下一页</g-button>-->
+    <!--</g-button-group>-->
+    <!--<div id="test"></div>-->
+</div>
+<script src="/app.a6a4d504.js"></script>
+<!--<script src="//at.alicdn.com/t/font_857605_fdy49sefj8m.js"></script>-->
+</body>
+</html>

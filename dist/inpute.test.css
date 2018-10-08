@@ -1,0 +1,42 @@
+
+.g-icon[data-v-f718e8] {
+  width: 1em;
+  height: 1em;
+}
+
+.wrapper[data-v-d7604e] {
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+.wrapper[data-v-d7604e] :not(last-child) {
+    margin-right: 0.5em;
+}
+.wrapper.error > input[data-v-d7604e] {
+    border-color: #F14530;
+}
+.wrapper .icon-error[data-v-d7604e] {
+    fill: #F14530;
+}
+.wrapper .errorMessage[data-v-d7604e] {
+    color: #F14530;
+}
+.wrapper > input[data-v-d7604e] {
+    height: 32px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 0 8px;
+    font-size: inherit;
+}
+.wrapper > input[data-v-d7604e]:hover {
+      border-color: #666;
+}
+.wrapper > input[data-v-d7604e]:focus {
+      outline: none;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.wrapper > input[disabled][data-v-d7604e], .wrapper > input[readonly][data-v-d7604e] {
+      border-color: #bbb;
+      color: #bbb;
+      cursor: not-allowed;
+}
