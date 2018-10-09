@@ -24,9 +24,9 @@
             --border-color-hover: #666;
         }
 
-        #app {
-            margin: 20px;
-        }
+        /*#app {*/
+            /*margin: 20px;*/
+        /*}*/
 
         body {
             font-size: var(--font-size);
@@ -39,7 +39,29 @@
     </style>
 </head>
 <body>
+
 <div id="app">
+    <g-row>
+        <g-col>1</g-col>
+        <g-col>2</g-col>
+    </g-row>
+    <g-row>
+        <g-col>1</g-col>
+        <g-col>2</g-col>
+        <g-col>3</g-col>
+    </g-row>
+    <g-row>
+        <g-col>1</g-col>
+        <g-col>2</g-col>
+        <g-col>3</g-col>
+        <g-col>4</g-col>
+    </g-row>
+    <g-row>
+        <!--<g-col :span="2">2</g-col>-->
+        <!--<g-col :span="22">22</g-col>-->
+        <g-col span="2">2</g-col>
+        <g-col span="22">22</g-col>
+    </g-row>
     <!--<div class="box">-->
         <!--<g-input value="张三"></g-input>-->
         <!--<g-input value="张三" disabled></g-input>-->
@@ -48,13 +70,13 @@
     <!--<div class="box">-->
         <!--<g-input value="王" @ichange="inputChange"></g-input>-->
     <!--</div>-->
-    <div class="box">
-        <g-input value="王" error="不能少于两个字"></g-input>
-    </div>
-    <div class="box">
-        <g-input v-model="message"></g-input>
-        <p>{{message}}</p>
-    </div>
+    <!--<div class="box">-->
+        <!--<g-input value="王" error="不能少于两个字"></g-input>-->
+    <!--</div>-->
+    <!--<div class="box">-->
+        <!--<g-input v-model="message"></g-input>-->
+        <!--<p>{{message}}</p>-->
+    <!--</div>-->
     <!--<g-button icon="settings" :loading="loading1" icon-position="right" @click="loading1 = !loading1">-->
     <!--按钮-->
     <!--</g-button>-->
