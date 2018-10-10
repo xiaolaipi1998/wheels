@@ -41,16 +41,17 @@
 <body>
 
 <div id="app">
-    <g-row>
+    <div style="border: 1px solid red;">
+    <g-row gutter="20">
         <g-col>1</g-col>
         <g-col>2</g-col>
     </g-row>
-    <g-row>
+    <g-row gutter="20">
         <g-col>1</g-col>
         <g-col>2</g-col>
         <g-col>3</g-col>
     </g-row>
-    <g-row>
+    <g-row gutter="20">
         <g-col>1</g-col>
         <g-col>2</g-col>
         <g-col>3</g-col>
@@ -62,6 +63,21 @@
         <g-col span="2">2</g-col>
         <g-col span="22">22</g-col>
     </g-row>
+
+    <g-row gutter="20">
+        <g-col span="2" >1</g-col>
+        <g-col span="18" offset="4">2</g-col>
+    </g-row>
+    <g-row gutter="20">
+        <g-col span="2" >1</g-col>
+        <g-col span="20" offset="2">2</g-col>
+    </g-row>
+    <g-row gutter="20">
+        <g-col span="5" >1</g-col>
+        <g-col span="5" offset="3">2</g-col>
+        <g-col span="8" offset="3">3</g-col>
+    </g-row>
+    </div>
     <!--<div class="box">-->
         <!--<g-input value="张三"></g-input>-->
         <!--<g-input value="张三" disabled></g-input>-->
