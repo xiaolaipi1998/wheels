@@ -5,6 +5,11 @@ import ButtonGroup from './button-group'
 import GInput from './ginput'
 import GRow from './row'
 import GCol from './col'
+import Layout from './layout'
+import Header from './header'
+import Sider from './sider'
+import Content from './content'
+import Footer from './footer'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -12,6 +17,11 @@ Vue.component('g-button-group', ButtonGroup)
 Vue.component('g-input', GInput)
 Vue.component('g-row', GRow)
 Vue.component('g-col', GCol)
+Vue.component('g-layout', Layout)
+Vue.component('g-header', Header)
+Vue.component('g-sider', Sider)
+Vue.component('g-content', Content)
+Vue.component('g-footer', Footer)
 
 new Vue({
     el: '#app',
