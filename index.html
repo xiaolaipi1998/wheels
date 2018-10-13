@@ -24,165 +24,17 @@
             --border-color-hover: #666;
         }
 
-        /*#app {*/
-            /*margin: 20px;*/
-        /*}*/
 
-        /*body {*/
-            /*font-size: var(--font-size);*/
-        /*}*/
     </style>
-    <style>
-        /*.box{*/
-            /*margin: 20px;*/
-        /*}*/
-    </style>
+
 </head>
 <body>
-<style>
-    /*.demoBox{*/
-        /*min-height: 50px;*/
-        /*background: grey;*/
-        /*border: 1px solid red;*/
-    /*}*/
-    /*.logo-wrapper{*/
-        /*padding: 10px;*/
-    /*}*/
-    .demo{
-        min-height: 100px;
-    }
-    .sider{
-        background: #333;
-        width: 150px;
-    }
-    .sider.slider-enter, .sider.slider-leave-to {
-        margin-left: -150px;
-    }
-    .header{
-        background: #999;
-        height: 100px;
-    }
-    .footer{
-        background: #ccc;
-        height: 50px;
-    }
 
-</style>
 <div id="app">
-    <g-layout class="demo" style="height: 100vh">
-        <g-sider class="demo">sider</g-sider>
-        <g-layout>
-            <g-header class="demo">header</g-header>
-            <g-content class="demo">content</g-content>
-            <g-footer class="demo">footer</g-footer>
+    <button @click="showToast">点我</button>
 
-        </g-layout>
-    </g-layout>
 </div>
-<!--<div id="app">-->
-    <!--&lt;!&ndash;<g-row class="topbar">&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-col class="demoBox" span="9">&ndash;&gt;-->
-            <!--&lt;!&ndash;<g-row align="left">&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>1</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>2</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>3</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>4</g-col>&ndash;&gt;-->
-            <!--&lt;!&ndash;</g-row>&ndash;&gt;-->
-        <!--&lt;!&ndash;</g-col>&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-col class="demoBox" span="15">&ndash;&gt;-->
-            <!--&lt;!&ndash;<g-row align="right">&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>1</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>2</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>3</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>4</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>5</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>6</g-col>&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col>7</g-col>&ndash;&gt;-->
-            <!--&lt;!&ndash;</g-row>&ndash;&gt;-->
-        <!--&lt;!&ndash;</g-col>&ndash;&gt;-->
-    <!--&lt;!&ndash;</g-row>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-row class="log-and-search-and-grcode">&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-col class="demoBox" class="demoBox" span="4">&ndash;&gt;-->
-            <!--&lt;!&ndash;<g-row align="center">&ndash;&gt;-->
-                <!--&lt;!&ndash;<g-col class="logo-wrapper">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<img class="logo" src="https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png" alt="">&ndash;&gt;-->
-                <!--&lt;!&ndash;</g-col>&ndash;&gt;-->
-            <!--&lt;!&ndash;</g-row>&ndash;&gt;-->
 
-        <!--&lt;!&ndash;</g-col>&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-col class="demoBox" span="14"></g-col>&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-col class="demoBox" span="6"></g-col>&ndash;&gt;-->
-    <!--&lt;!&ndash;</g-row>&ndash;&gt;-->
-    <!--<div style="border: 1px solid red;">-->
-    <!--<g-row gutter="20">-->
-        <!--<g-col span="2" :phone="{span:12}">1</g-col>-->
-        <!--<g-col span="20" offset="2" :phone="{span:12,offset:0}">11</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row gutter="20">-->
-        <!--<g-col>1</g-col>-->
-        <!--<g-col>2</g-col>-->
-        <!--<g-col>3</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row gutter="20">-->
-        <!--<g-col>1</g-col>-->
-        <!--<g-col>2</g-col>-->
-        <!--<g-col>3</g-col>-->
-        <!--<g-col>4</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row>-->
-        <!--&lt;!&ndash;<g-col :span="2">2</g-col>&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-col :span="22">22</g-col>&ndash;&gt;-->
-        <!--<g-col span="2">2</g-col>-->
-        <!--<g-col span="22">22</g-col>-->
-    <!--</g-row>-->
-
-    <!--<g-row gutter="20">-->
-        <!--<g-col span="2" >1</g-col>-->
-        <!--<g-col span="18" offset="4">2</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row gutter="20">-->
-        <!--<g-col span="2" >1</g-col>-->
-        <!--<g-col span="20" offset="2">2</g-col>-->
-    <!--</g-row>-->
-    <!--<g-row gutter="20">-->
-        <!--<g-col span="5" >1</g-col>-->
-        <!--<g-col span="5" offset="3">2</g-col>-->
-        <!--<g-col span="8" offset="3">3</g-col>-->
-    <!--</g-row>-->
-    <!--</div>-->
-    <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-input value="张三"></g-input>&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-input value="张三" disabled></g-input>&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-input value="张三" :readonly=true></g-input>&ndash;&gt;-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-input value="王" @ichange="inputChange"></g-input>&ndash;&gt;-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-input value="王" error="不能少于两个字"></g-input>&ndash;&gt;-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div class="box">&ndash;&gt;-->
-        <!--&lt;!&ndash;<g-input v-model="message"></g-input>&ndash;&gt;-->
-        <!--&lt;!&ndash;<p>{{message}}</p>&ndash;&gt;-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-button icon="settings" :loading="loading1" icon-position="right" @click="loading1 = !loading1">&ndash;&gt;-->
-    <!--&lt;!&ndash;按钮&ndash;&gt;-->
-    <!--&lt;!&ndash;</g-button>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">&ndash;&gt;-->
-    <!--&lt;!&ndash;按钮&ndash;&gt;-->
-    <!--&lt;!&ndash;</g-button>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-button icon="settings" :loading="loading3" icon-position="left" @click="loading3 = !loading3">&ndash;&gt;-->
-    <!--&lt;!&ndash;按钮&ndash;&gt;-->
-    <!--&lt;!&ndash;</g-button>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-icon icon="download"></g-icon>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-button-group>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-button icon="left">上一页</g-button>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-button >更多</g-button>&ndash;&gt;-->
-    <!--&lt;!&ndash;<g-button icon="right" icon-position="right">下一页</g-button>&ndash;&gt;-->
-    <!--&lt;!&ndash;</g-button-group>&ndash;&gt;-->
-    <!--&lt;!&ndash;<div id="test"></div>&ndash;&gt;-->
-<!--</div>-->
 <script src="./src/app.js"></script>
-<!--<script src="//at.alicdn.com/t/font_857605_fdy49sefj8m.js"></script>-->
 </body>
 </html>
