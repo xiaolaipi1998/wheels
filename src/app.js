@@ -34,6 +34,24 @@ new Vue({
         loading3: true,
         message:'hi'
     },
+    created(){
+        this.$toast('很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字' +
+            '很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字' +
+            '很多文字很多文字很多文字很多文字很多文字很多文字很多文字' +
+            '很多文字很多文字很多文字很多文字很多文字很多文字' +
+            '很多文字很多文字很多文字很多文字很多文字很多文字',
+            {
+                enableHtml: false
+            // closeButton: {
+            //     text: '知道了',
+            //     callback(toast){
+            //         toast.log()//由于toast组件中已经将toast实例传递过来了，所以可以直接调用toast组件中的方法
+            //         console.log('用户说他知道了')
+            //     }
+            // }
+        }
+        )
+    },
     methods: {
         // inputChange(e){
         //     console.log(e.target.value);
