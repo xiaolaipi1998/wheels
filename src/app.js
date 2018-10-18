@@ -11,6 +11,11 @@ import Sider from './sider'
 import Content from './content'
 import Footer from './footer'
 import Plugin from './plugin'
+import Tabs from './tabs'
+import TabsHead from './tabs-head'
+import TabsBody from './tabs-body'
+import TabsPane from './tabs-pane'
+import TabsItem from './tabs-item'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -23,41 +28,58 @@ Vue.component('g-header', Header)
 Vue.component('g-sider', Sider)
 Vue.component('g-content', Content)
 Vue.component('g-footer', Footer)
+Vue.component('g-tabs', Tabs)
+Vue.component('g-tabs-head', TabsHead)
+Vue.component('g-tabs-body', TabsBody)
+Vue.component('g-tabs-pane', TabsPane)
+Vue.component('g-tabs-item', TabsItem)
 
 Vue.use(Plugin)
 
 new Vue({
     el: '#app',
     data: {
-        loading1: false,
-        loading2: true,
-        loading3: true,
-        message:'hi'
+        selectedTab: 'sports'
+        // loading1: false,
+        // loading2: true,
+        // loading3: true,
+        // message:'hi'
     },
     created(){
-        this.$toast('很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字' +
-            '很多文字很多文字很多文字很多文字很多文字很多文字很多文字很多文字' +
-            '很多文字很多文字很多文字很多文字很多文字很多文字很多文字' +
-            '很多文字很多文字很多文字很多文字很多文字很多文字' +
-            '很多文字很多文字很多文字很多文字很多文字很多文字',
-            {
-                enableHtml: false
-            // closeButton: {
-            //     text: '知道了',
-            //     callback(toast){
-            //         toast.log()//由于toast组件中已经将toast实例传递过来了，所以可以直接调用toast组件中的方法
-            //         console.log('用户说他知道了')
-            //     }
-            // }
-        }
-        )
+
     },
     methods: {
         // inputChange(e){
         //     console.log(e.target.value);
         // }
-        showToast(){
-            this.$toast('i am message')
+        yyy(data){
+            console.log(data);
+        },
+        showToast1(){
+            this.showToast('top')
+        },
+        showToast2(){
+            this.showToast('bottom')
+        },
+        showToast3(){
+            this.showToast('middle')
+        },
+        showToast(position){
+            this.$toast('你的智商需要充值',
+                {
+                    enableHtml: false,
+                    position,
+                    closeButton: {
+                        text: '已充值',
+                        callback(toast){
+                            toast.log()//由于toast组件中已经将toast实例传递过来了，所以可以直接调用toast组件中的方法
+                            console.log('他说他已经充值了')
+                        }
+                    },
+                    autoClose: 3
+
+                }
+            )
         }
 
     }
