@@ -20,9 +20,13 @@
         //     })
         //
         // }
-        created(){
+        mounted(){
             this.eventBus.$on('update:selected', (item, vm)=> {
-                console.log(item, vm)
+               let {width, height, top, left} = vm.$el.getBoundingClientRect()
+                console.log(width, height, top,left);
+                this.$refs.line.style.width = `${width}px`
+                this.$refs.line.style.left = `${left}px`
+
             })
         }
     }
@@ -31,6 +35,7 @@
 <style scoped lang="scss">
     $tab-height: 40px;
     $tab-margin-right: 10px;
+    $border-color: #ddd;
     $blue: blue;
     .tabs-head {
         display: flex;
@@ -39,11 +44,12 @@
         align-items: center;
         position: relative;
         margin-right: $tab-margin-right;
+        border-bottom: 1px solid  $border-color;
         > .line {
             position: absolute;
-            border-bottom: 3px solid $blue;
+            border-bottom: 1px solid $blue;
             bottom:0;
-            width: 100px;
+            transition: all 1s;
         }
         > .actions {
             margin-left: auto;
