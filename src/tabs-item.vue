@@ -1,5 +1,8 @@
 <template>
-    <div class="tabs-item"  :class="classes" @click="onClick">
+    <div class="tabs-item"
+         :class="classes"
+         :data-name="name"
+         @click="onClick">
         <slot></slot>
     </div>
 </template>
@@ -32,14 +35,21 @@
         },
         inject: ['eventBus'],
         created() {
-            this.eventBus.$on('update:selected', (name) => {
-                this.active = name === this.name;
-            })
+
+                this.eventBus && this.eventBus.$on('update:selected', (name) => {
+                    this.active = name === this.name;
+                })
+
+
         },
         methods:{
             onClick(){
                 if(this.disabled) {return }
-                this.eventBus.$emit('update:selected', this.name, this)
+
+                this.eventBus && this.eventBus.$emit('update:selected', this.name, this)
+                this.$emit('click', this) //为了测试disabled而添加的语句
+
+
             }
         }
     }
