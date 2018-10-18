@@ -35,7 +35,15 @@
         mounted(){
             // this.$emit('update:selected', '这是this. $emit 出来的数据')
             // this.eventBus.$emit('update:selected', '这是this eventBus  $emit 出来的数据') //这个不会触发
-            this.eventBus.$emit('update:selected', this.selected )
+            this.$children.forEach((vm)=>{
+                if(vm.$options.name === 'tabs-head'){
+                    vm.$children.forEach((item)=>{
+                       if(item.name === this.selected){
+                           this.eventBus.$emit('update:selected', this.selected, item )
+                       }
+                    })
+                }
+            })
         }
     }
 </script>
