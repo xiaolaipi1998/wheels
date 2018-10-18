@@ -22,9 +22,10 @@
     $tab-margin-right: 10px;
     .tabs-head {
         display: flex;
-        min-height: $tab-height;
+
         justify-content: flex-start;
         align-items: center;
+        /*padding: 10px 0;*/
         margin-right: $tab-margin-right;
         > .settings {
             margin-left: auto;
