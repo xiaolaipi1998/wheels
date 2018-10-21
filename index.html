@@ -31,17 +31,20 @@
 <body>
 
 <div id="app" style="padding-top: 100px;padding-left: 100px;border:1px solid red;">
-    <g-popover>
-        <template slot="content">
-            <div>popover 内容</div>
-        </template>
+    <div style="border: 1px solid green; padding:5px;overflow: hidden;">
+        <g-popover>
+            <template slot="content">
+                <div>popover 内容</div>
+            </template>
             <button>点我</button>
-    </g-popover><g-popover>
-        <template slot="content">
-            <div>popover 内容</div>
-        </template>
+        </g-popover>
+        <g-popover>
+            <template slot="content">
+                <div>popover 内容</div>
+            </template>
             <button>点我</button>
-    </g-popover>
+        </g-popover>
+    </div>
 </div>
 
 <script src="./src/app.js"></script>
