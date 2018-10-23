@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″/>
+    <title>轮子</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {max-width: 100%;}
+
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="app" >
+    <div style="overflow: hidden;padding:150px;">
+        <g-popover position="bottom">
+            <template slot="content">
+                <div>popover 内容ddd</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="top">
+            <template slot="content">
+                <div>popover 内容ddd</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="left">
+            <template slot="content">
+                <div>popovdddd内容</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="right">
+            <template slot="content">
+                <div>popovd 内容</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+    </div>
+    <div style="overflow: hidden;padding:150px;">
+        <g-popover position="bottom" trigger="hover">
+            <template slot="content">
+                <div>popover 内容ddd</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="top">
+            <template slot="content">
+                <div>popover 内容ddd</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="left">
+            <template slot="content">
+                <div>popovdddd内容</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+        <g-popover position="right">
+            <template slot="content">
+                <div>popovd 内容</div>
+            </template>
+            <g-button>点我</g-button>
+        </g-popover>
+    </div>
+</div>
+
+<script src="./src/app.js"></script>
+</body>
+</html>
